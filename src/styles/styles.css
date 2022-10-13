@@ -1,6 +1,3 @@
-:root {
-    --color-gray: gray
-}
 
 * {
     padding: 0;
@@ -41,13 +38,67 @@ button:hover {
     margin: 0 auto;
 }
 
+.twitter--menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.twitter-menu img {
+    width: 25px;
+    height: 25px;
+}
+
+.container--twitter-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 50%
+}
+
+.list--item {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 12px;
+}
+
+.container--twitter-icon:hover, .list--item:hover {
+    background: var(--color-gray);
+    border-radius: 20px;
+}
+
 .twitter--menu, .twitter--recommended {
     width: 25%;
-    padding: 15px;
+    padding: var(--padding-lg); 
+}
+
+.primary--button {
+    margin-top: 20px;
+    width: 100%;
+    height: 52px;
+    border-radius: 40px;
+    border: none;
+    background: #52a1da;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary--button:hover {
+ background: #2D85C4;
 }
 
 .twitter--profile {
     width: 50%;
+    border: 1px solid var(--color-gray);
+}
+
+
+.profile--banner img {
+    width: 100%;
 }
 
 /*Twitter menu*/
@@ -58,25 +109,232 @@ button:hover {
 }
 
 .twitter--nav .nav--list .item--button {
-    width: 100px;
     text-align: left;
+    width: 100px;   
 }
 
-.profile-header {
+.profile--header {
     display: flex;
     align-items: center;
 }
 
-.profile-header .header--button {
+.profile--header .header--button {
     margin-right: 25px;
+    margin-left: 8px;
 }
 
-.profile-header .info-name {
-    font-size: 2.2rem;
+.header--button img {
+    width: 16px;
+}
+
+.profile--header .info--name {
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
-.profile-header .info-tweets {
-    font-size: 1.4rem;
-    color: var(--color-gray);
+.profile--header .info--tweets {
+    font-size: 1.3rem;
+    color: var(--gray-text);
 }
+
+/*Profile details*/
+
+.profile--details {
+    padding: var(--padding-lg);
+}
+
+.profile--details .detail--header {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.profile--details .header--img-container {
+    position: absolute;
+    top: -100px;
+    border: 5px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header--container-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 12px;
+}
+
+.dots {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--color-gray);
+    background: white;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 8px;
+}
+
+.dots p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dots:hover {
+    cursor: pointer;
+    background-color: var(--color-gray);
+}
+
+.follow {
+    background: black;
+    color: white;
+    font-size: 16px;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow:hover {
+    background-color: rgba(0, 0, 0, 0.687);
+    cursor: pointer;
+}
+
+.profile--details .header--img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/*Description section*/
+
+.description--name {
+    font-size: 2.0rem;
+}
+
+.description--user{
+    margin: 5px 0 2px;
+    font-size: 1.4rem;
+    color: var(--gray-text)
+}
+
+.description--profile {
+    font-size: 1.5rem;
+    width: 99%;
+    margin-bottom: 20px;
+}
+
+  /* Profile links */
+  
+  
+.profile--links{
+    display: flex;
+    padding: var(--padding-lg);;
+}
+  
+.profile--links li{
+    width: 25%;
+    height: 40px;
+    transition: all .3s;
+}
+  
+.profile--links li:hover{
+    cursor: pointer;
+    background-color: var(--color-gray);
+}
+  
+.profile--links li a{
+    font-size: 1.4rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+  
+/* Recommended section */
+  
+.twitter--recommended .recommended--header input{
+    padding: var(--padding-md);
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: var(--color-gray);
+    color: black;
+    border: 0;
+}
+  
+.twitter--recommended .recommended--signup{
+    padding: var(--padding-lg);
+    border-radius: 15px;
+    border: 1px solid var(--color-gray);
+}
+  
+.signup--title{
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+  
+.signup--paragraph{
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+  
+.list--buttons li button{
+    padding: 5px 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid var(--color-gray);
+}
+  
+.list--buttons li button:hover{
+    cursor: pointer;
+    background-color: var(--color-gray);
+    transition: all .3s;
+}
+  
+.recommended--images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 90px;
+    gap: 1px;
+    border-radius: 15px;
+    margin: 5px 0;
+}
+  
+  
+.tweets--tweet{
+    display: flex;
+    border: 1px solid var(--color-gray);
+}
+  
+  .tweets--tweet img{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+.tweet--container{
+    padding: var(--padding-md);
+}
+  
+.container--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem
+}
+  
+.tweet--content{
+    font-size: 1.6rem;
+    margin: 5px;
+    width: 70%;
+  }
