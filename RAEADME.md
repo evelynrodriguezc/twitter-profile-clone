@@ -1,4 +1,4 @@
-##Twitter RappiPay Profile Clone
-###Builded with:
+## Twitter RappiPay Profile Clone
+### Builded with:
 * HTML
 * CSS
