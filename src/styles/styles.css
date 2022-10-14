@@ -38,12 +38,16 @@ button:hover {
     margin: 0 auto;
 }
 
+.twitter--icon {
+    width: 70%;
+}
+
 .twitter--menu{
     display: flex;
     flex-direction: column;
 }
 
-.twitter-menu img {
+.twitter--menu img {
     width: 25px;
     height: 25px;
 }
@@ -151,7 +155,7 @@ button:hover {
 .profile--details .header--img-container {
     position: absolute;
     top: -100px;
-    border: 5px solid white;
+    border: 5px solid #fafafa;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -171,6 +175,7 @@ button:hover {
     border: 1px solid var(--color-gray);
     background: white;
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     margin-right: 8px;
 }
@@ -186,7 +191,7 @@ button:hover {
     background-color: var(--color-gray);
 }
 
-.follow {
+.follow--button {
     background: black;
     color: white;
     font-size: 16px;
@@ -198,7 +203,7 @@ button:hover {
     justify-content: center;
 }
 
-.follow:hover {
+.follow--button:hover {
     background-color: rgba(0, 0, 0, 0.687);
     cursor: pointer;
 }
@@ -297,7 +302,7 @@ button:hover {
     transition: all .3s;
 }
   
-.recommended--images{
+.recommended--images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -308,6 +313,10 @@ button:hover {
     margin: 5px 0;
 }
   
+.recommended--images__grill {
+ border-radius: 12px;
+ margin-bottom: 2px;
+}
   
 .tweets--tweet{
     display: flex;
@@ -336,5 +345,5 @@ button:hover {
 .tweet--content{
     font-size: 1.6rem;
     margin: 5px;
-    width: 70%;
+    width: 98%;
   }
