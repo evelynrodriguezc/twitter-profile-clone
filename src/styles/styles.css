@@ -346,4 +346,9 @@ button:hover {
     font-size: 1.6rem;
     margin: 5px;
     width: 98%;
-  }
+}
+
+.disclaimer--info p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
